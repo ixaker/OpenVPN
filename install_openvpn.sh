@@ -291,9 +291,9 @@ server 10.8.0.0 255.255.255.0" > /etc/openvpn/server/server.conf
 				resolv_conf="/etc/resolv.conf"
 			fi
 			# Obtain the resolvers from resolv.conf and use them for OpenVPN
-			grep -v '^#\|^;' "$resolv_conf" | grep '^nameserver' | grep -oE '[0-9]{1,3}(\.[0-9]{1,3}){3}' | while read line; do
+			# grep -v '^#\|^;' "$resolv_conf" | grep '^nameserver' | grep -oE '[0-9]{1,3}(\.[0-9]{1,3}){3}' | while read line; do
 				# echo "push \"dhcp-option DNS $line\"" >> /etc/openvpn/server/server.conf
-			done
+			# done
 		;;
 		2)
 			echo 'push "dhcp-option DNS 8.8.8.8"' >> /etc/openvpn/server/server.conf
