@@ -6,4 +6,4 @@ root # dnf -y install git
 root # dnf -y install wget
 
 Установка
-root # wget https://github.com/ixaker/OpenVPN -O install_openvpn.sh && bash openvpn-install.sh
+root # wget https://github.com/ixaker/OpenVPN -O install_openvpn.sh && chmod +x openvpn-install.sh && bash openvpn-install.sh
