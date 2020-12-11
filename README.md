@@ -1,8 +1,9 @@
 OpenVPN сервер
 
-Перед установкой:
+Перед установкой
 root # dnf update -y
 root # dnf -y install git
 root # dnf -y install wget
-Установка :
+
+Установка
 root # wget https://github.com/ixaker/OpenVPN -O install_openvpn.sh && bash openvpn-install.sh
